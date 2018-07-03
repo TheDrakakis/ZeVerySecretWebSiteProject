@@ -12,7 +12,8 @@ addons:
   chrome: stable
 
 install:
+  - npm i npm@latest -g
   - npm install
 
 script:
-  - ng build -prod
+  - ng build --prod
