@@ -2,8 +2,8 @@
   <div class="row">
       <h1>Quelle cause souhaitez vous défendre ?</h1>
 
-      <textarea autofocus class="cause" [(ngModel)]="cause" [readOnly]="loading !== states.Waiting"></textarea>
-      <br>
+      <textarea autosize rows="1" [minRows]="1" autofocus class="cause" [(ngModel)]="cause" [readOnly]="loading !== states.Waiting"></textarea>
+
       <div [ngSwitch]="loading" class="cause-acceptation">
           <button *ngSwitchCase="states.Waiting" class="submit-cause" (click)="submitCause()" >Je suis un connard et j'approuve</button>
           <div    *ngSwitchCase="states.Loading" class="loader"></div>
