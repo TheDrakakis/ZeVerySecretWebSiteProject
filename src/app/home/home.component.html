@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-      <h1>Affirmez vos opinions !</h1>
+      <h1>Affirmez vos opinions controversées!</h1>
 
       <textarea autosize rows="1" [minRows]="1" autofocus class="cause" [(ngModel)]="cause" [readOnly]="loading !== states.Waiting"></textarea>
 
@@ -9,7 +9,8 @@
           <div    *ngSwitchCase="states.Loading" class="loader"></div>
           <div    *ngSwitchCase="states.Done" class="accepted-cause">
             <p>✓ Felicitations vous êtes un connard !</p>
-            Partagez <input readonly type="text" [value]="url"/>
+            Partagez cette URL avec un autre connard </br>
+            <input readonly type="text" [value]="url"/>
           </div>
       </div>
   </div>
