@@ -19,6 +19,12 @@ h1 {
   font-family: Verdana, Geneva, sans-serif;
 }
 
+.submit-cause:disabled {
+  background-color: #B9B9B9;
+  color: gray;
+  cursor: default;
+}
+
 .submit-cause {
   background-color: #4CAF50;
   border: none;

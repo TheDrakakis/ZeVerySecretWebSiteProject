@@ -34,7 +34,9 @@ export class HomeComponent implements OnInit {
   }
 
   private formatToUrl(content: string): string {
-    return encodeURIComponent(content);
+    content = content.split(' ').join('_');
+    content = encodeURIComponent(content);
+    return content;
   }
 
   private clearCause(content: string): string {
