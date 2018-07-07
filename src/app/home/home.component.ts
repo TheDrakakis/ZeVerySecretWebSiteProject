@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
-import { timer } from 'rxjs/observable/timer';
+import { timer } from 'rxjs';
 import { Location } from '@angular/common';
 
 export enum State {
